@@ -15,6 +15,12 @@ header {
     color: #ffffff;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }  
+
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -24,15 +30,13 @@ header {
     color: #d9dcd6;
 }
 
-.header div {
-    padding-top: 15px;
-    margin-right: 20px;
+nav{
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
-nav {
+nav li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     list-style-type: none;
     display: inline-block;
     margin-left: 25px;
