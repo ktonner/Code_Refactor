@@ -8,6 +8,10 @@ body {
     background-color: #d9dcd6;
 }
 
+.clearfix{
+    clear:both
+}
+
 header {
     padding: 20px;
     width: 100%;
@@ -18,6 +22,10 @@ header {
     font-size: 24px;
 }
 
+header h1{
+    float: left;
+}
+
 
 .seo {
     color: #d9dcd6;
@@ -25,20 +33,20 @@ header {
 
 nav{
     float: right;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style-type: none;
-    display: inline;
-    margin-left: 25px;
+    display: inline-block;
+    margin-top: 15px;
 }
 
-nav li{
-    display: inline;
-}
+
 
 a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     text-decoration: none;
+    font-size: 20px;
+    margin-left: 25px;
+    padding-top: 15px;
 }
 
 p {
@@ -62,8 +70,6 @@ img{
 
 section {
     width: 75%;
-    float: left;
-    display: inline-block;
     margin-left: 20px;
     margin-bottom: 20px;
     padding: 50px;
@@ -84,9 +90,9 @@ section h2{
 
 aside {
     margin-right: 20px;
+    display: inline;
+    float:right;
     padding: 20px;
-    clear: both;
-    float: right;
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -110,13 +116,13 @@ aside img {
     max-width: 150px;
 }
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
